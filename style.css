@@ -9,7 +9,7 @@
     --blue-color: #1992D4;
     --gray-bg-color: #E2E8F0;
     --yellow-color: #F0B429;
-    --gray-text-color: #B3B3B3;
+    --gray-text-color: #818181;
 }
 
 .container {
@@ -44,6 +44,7 @@
     display: flex;
     flex-direction: column;
     gap: 55px;
+    font-size: 1.5rem;
 }
 
 .sidebar .logo-name {
@@ -67,3 +68,105 @@
     display: flex;
     gap: 10px;
 }
+
+/* Header */
+.header {
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.top-header, .bottom-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form input {
+    width: 300%;
+    background-color: var(--gray-bg-color);
+    border: none;
+    border-radius: 15px;
+    height: 2rem;
+}
+
+.top-header-right-contents {
+    display: flex;
+    gap: 30px;
+}
+
+.bottom-header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom-header-left-greeting div:first-child {
+    font-size: 1rem;
+}
+
+.bottom-header-left-greeting div:nth-child(2) {
+    font-size: 2rem;
+}
+
+.bottom-header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header button {
+    color: white;
+    background-color: var(--blue-color);
+    padding: 10px 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.3rem;
+}
+
+/* Main */
+.main {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    padding: 30px 15px;
+    gap: 20px;
+    background-color: var(--gray-bg-color);
+    box-shadow: inset 0px 10px 7px -7px #bebebe;
+}
+
+.projects-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    padding: 25px 15px 25px 25px;
+    background-color: white;
+    border-radius: 10px;
+    border-left: 10px solid var(--yellow-color);
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.card-contents {
+    color: var(--gray-text-color);
+}
+
+
+
