@@ -50,10 +50,26 @@
 .sidebar .logo-name {
     font-size: 2rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .logo-name svg {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.sidebar path {
+    fill: #FFFFFF;
 }
 
 .main-nav, .bottom-nav {
     font-weight: bold;
+}
+
+.main-nav svg, .bottom-nav svg {
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .main-nav ul, .bottom-nav ul {
@@ -69,6 +85,11 @@
     gap: 10px;
 }
 
+li > div {
+    width: 40px;
+    text-align: center;
+}
+
 /* Header */
 .header {
     padding: 20px 80px 20px 40px;
@@ -80,10 +101,21 @@
     font-size: 1.3rem;
 }
 
+.header .top-header svg {
+height: 1.8rem;
+}
+
 .top-header, .bottom-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+form {
+    display: flex;
+    width: 50%;
+    gap: 25px;
+    align-items: center;
 }
 
 form input {
@@ -103,6 +135,10 @@ form input {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.bottom-header svg {
+    height: 4.5rem;
 }
 
 .bottom-header-left-greeting div:first-child {
@@ -159,6 +195,10 @@ form input {
     border-left: 10px solid var(--yellow-color);
 }
 
+.card svg {
+    height: 1.8rem;
+}
+
 .card-title {
     font-size: 1.3rem;
     font-weight: bold;
@@ -174,7 +214,7 @@ form input {
     margin-top: 40px;
     display: flex;
     justify-content: end;
-    gap: 20px;
+    gap: 25px;
 }
 
 .main-right {
@@ -221,6 +261,10 @@ form input {
 
 .trending {
     align-self: end;
+}
+
+.trending svg {
+    height: 4rem;
 }
 
 .trending-list {
